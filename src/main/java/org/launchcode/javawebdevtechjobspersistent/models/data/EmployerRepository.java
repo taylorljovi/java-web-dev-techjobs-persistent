@@ -7,7 +7,8 @@ import org.springframework.stereotype.Repository;
 import javax.transaction.Transactional;
 
 @Repository
-    public interface EmployerRepository extends CrudRepository<Employer, Integer> {
-    }
+@Transactional
+public interface EmployerRepository extends CrudRepository<Employer, Integer> {
+}
 
 

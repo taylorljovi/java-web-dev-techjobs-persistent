@@ -16,7 +16,6 @@ import java.util.Optional;
 @RequestMapping("skills")
 public class SkillController {
 
-
     @Autowired
     private SkillRepository skillRepository;
 
@@ -33,7 +32,7 @@ public class SkillController {
             return "skills/add";
         }
         skillRepository.save(newSkill);
-        return "redirect:";
+        return "redirect:/add";
     }
 
     @GetMapping("view/{skillId}")
